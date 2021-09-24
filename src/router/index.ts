@@ -1,11 +1,22 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import Home from '../views/Home.vue'
-
+import gallery from '../views/gallery.vue'
+import worldgall from '../views/worldgallerymain.vue'
+import home from '../views/home.vue'
 const routes: Array<RouteRecordRaw> = [
+  {
+    path: '/Gallery',
+    name: 'Gallery',
+    component: gallery
+  },
+  {
+    path: '/ourWorlds',
+    name: 'ourWorlds',
+    component: worldgall
+  },
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: home
   },
   {
     path: '/about',
