@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import gallery from '../views/gallery.vue'
-import worldgall from '../views/worldgallerymain.vue'
-import home from '../views/Home.vue'
+import gallery from '../views/gallery/gallery.vue'
+import worldgall from '../views/ourWorld/worldgallerymain.vue'
+import home from '../views/home/Home.vue'
+import about from '../views/about/About.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/Gallery',
@@ -21,11 +22,16 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/about',
     name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+    component: about
+  },
+  // {
+  //   path: '/about',
+  //   name: 'About',
+  //   // route level code-splitting
+  //   // this generates a separate chunk (about.[hash].js) for this route
+  //   // which is lazy-loaded when the route is visited.
+  //   component: () => import(/* webpackChunkName: "about" */ '../views/about/About.vue')
+  // }
 ]
 
 const router = createRouter({

@@ -74,8 +74,8 @@
   </div>
 </Section> -->
 </template>>
-<script type="module" src="./slider.ts"></script>
+<script type="module" src="./about.js"></script>
 <style scoped lang="scss">
 
-@import './slider.scss';
+@import './about.scss';
 </style>

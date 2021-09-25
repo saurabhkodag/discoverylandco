@@ -9,7 +9,6 @@
 </template>
 
 <script lang="ts">
-
 import { Options, Vue } from 'vue-class-component';
 // import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 import headerrr from '@/components/header/headerr.vue';
@@ -32,7 +31,6 @@ export default class Home extends Vue {}
 </script>
 
 <style scoped lang="scss">
-
    @import '@/assets/scss/global';
      .nav {
        display: flex;
@@ -63,7 +61,6 @@ export default class Home extends Vue {}
     width: 100%;
     position: relative;
 }
-
 .video-container video {
   width: 100%;
   height: 100%;
