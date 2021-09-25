@@ -157,7 +157,7 @@ export default class gallery extends Vue {
     // }, 
   ];
   getImgUrl(pic:string):string{
-    return require("../assets/images/world/"+pic);
+    return require("../../assets/images/world/"+pic);
   }
 }
 </script>

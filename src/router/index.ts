@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import gallery from '../views/gallery.vue'
 import worldgall from '../views/worldgallerymain.vue'
-import home from '../views/home.vue'
+import home from '../views/Home.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/Gallery',
