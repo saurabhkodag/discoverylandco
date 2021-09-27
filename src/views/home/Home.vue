@@ -3,7 +3,7 @@
     <headerrr/>
     <welcome/>
     <slider/>
-    <about/>
+    <homeland/>
     <home3/>
     <footerr/>
   
@@ -18,14 +18,14 @@ import footerr from '@/components/footer/footer.vue';
 import home3 from '@/components/home3pic/home3pic.vue' 
  import slider from '@/components/slider/slider.vue'
 import welcome from '@/components/welcome/welcome.vue';
-import about from "../about/About.vue";
+import homeland from "@/components/home_land_of_discovery/home_land.vue";
 @Options({
   components: {
    
     headerrr,
     welcome,
     slider,
-    about,
+    homeland,
     home3,
     footerr,
   },

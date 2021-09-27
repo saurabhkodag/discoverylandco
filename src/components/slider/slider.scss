@@ -1,10 +1,46 @@
-
+.button-pair button {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 8px 14px 0 rgb(211, 211, 211);
+    font-size: 2rem;
+	margin-right: 1rem;
+  }
+  
+  .button-pair{
+	margin-right: 5rem;
+	  display: flex;
+  }
+ 
 .component_three_text{
 	display: flex;
 	flex-direction: row;
 	height: 200px;
 	width: 100%;
 	background: #fff;
+}
+.slide_text{
+	display: flex;
+	flex-direction: column;
+    position: absolute;
+	align-items: flex-start;
+    z-index: 5;
+	font-family: 'gt-sectra';
+    // font-weight: 200px;
+    font-size: 40px;
+	padding-top: 18%;
+	padding-left: 2%;
+    color: #ffffff;
+	.textp{
+		display: flex;
+		font-size: .9rem;
+		color: hsla(0,0%,100%,.75);;
+	}
 }
 .component_left{
 	width: 10%;
@@ -42,6 +78,8 @@
 	width: 100%;
 	height: 900px;
 	img{
+		position:relative;
+		z-index: 0;
 		width: 100%;
 		height: 900px;
 	}
@@ -75,6 +113,7 @@ $animationSpeed: 40s;
 
 // Styling
 .slider {
+	display: flex;
 	background: white;
 	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
 	// height: 2000px;
@@ -83,21 +122,7 @@ $animationSpeed: 40s;
 	position: relative;
 	width: 100%;
 	
-	&::before,
-	&::after {
-		@include white-gradient;
-		content: "";
-		height: 100px;
-		position: absolute;
-		width: 200px;
-		z-index: 2;
-	}
-	
-	&::after {
-		right: 0;
-		top: 0;
-		transform: rotateZ(180deg);
-	}
+
 
 	&::before {
 		left: 0;
@@ -105,19 +130,18 @@ $animationSpeed: 40s;
 	}
 	
 	.slide-track {
-		animation: scroll $animationSpeed linear infinite;
+	  animation: scroll $animationSpeed linear infinite;
 		display: flex;
 		width: calc(250px * 14);
 	}
 	
 	.slide {
-		// height: 1000px;
-		// width: 2500px;
-        
+		display: flex;
         img{
-            padding:20px ;
-            
+			position:relative;
+            padding:20px ; 
         }
+		
 	}
 }
 
