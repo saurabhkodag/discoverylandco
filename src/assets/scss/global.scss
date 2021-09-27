@@ -7,6 +7,36 @@
   background-color:#000000;
   
 }
+.rout {
+  position: relative;
+  color: inherit;
+  text-decoration: none !important;
+  line-height: 24px;
+  text-decoration: none;
+}
+.rout:before, .rout:after, a > span:before, a > span:after {
+  content: '';
+  position: absolute;
+  transition: transform .5s ease;
+}
+.nav  .rigth_nav  .rout {
+  color: #ffffff;
+  display: inline-flex;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  overflow: hidden;
+}
+.nav  .rigth_nav .rout:before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #fffeff;
+  transform: translateX(-100%);
+}
+.nav  .rigth_nav  .rout:hover:before {
+  transform: translateX(0);
+}
 body{
   margin: 0;
 }
@@ -62,7 +92,8 @@ body{
   font-size: 30px;
 }
 .rigth_nav{
-  
+  height: 35px;
+  color: #ffffff;
   display: flex;
   align-items: right;
   width: 50%;

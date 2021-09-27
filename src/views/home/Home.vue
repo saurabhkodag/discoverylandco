@@ -2,7 +2,8 @@
    
     <headerrr/>
     <welcome/>
-    
+    <slider/>
+    <about/>
     <home3/>
     <footerr/>
   
@@ -15,14 +16,16 @@ import headerrr from '@/components/header/headerr.vue';
 // import headd from '@/components/headerr.vue';
 import footerr from '@/components/footer/footer.vue';
 import home3 from '@/components/home3pic/home3pic.vue' 
-// import slider from '@/components/slider/slider.vue'
+ import slider from '@/components/slider/slider.vue'
 import welcome from '@/components/welcome/welcome.vue';
+import about from "../about/About.vue";
 @Options({
   components: {
    
     headerrr,
     welcome,
-   
+    slider,
+    about,
     home3,
     footerr,
   },
