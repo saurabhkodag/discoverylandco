@@ -1,5 +1,4 @@
 
-   
 .component_three_text{
 	display: flex;
 	flex-direction: row;
@@ -38,6 +37,7 @@
     font-weight: 200;
 }
 .component_three_image{
+	display: flex;
 	background-color: #fff;
 	display: flex;
 	width: 100%;
@@ -46,10 +46,91 @@
 		width: 100%;
 		height: 900px;
 	}
+	.component_three_image_left{
+		position: relative;
+		width: 80%;
+	}
+	.info{
+		display: flex;
+		
+		left: 50%;
+		height: 550px;
+		width: 50%;
+		background-color: rgb(0, 0, 0);
+		position: absolute;
+		z-index: 1;
+		.info_left{
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+			margin-top: 5%;
+			width: 50%;
+			.bt-d{
+				
+				margin-top: 25%;
+				margin-left: 15%;
+				width: 100%;
+				display: flex;
+				top: 100.5rem;
+    			bottom: -1.5rem;
+    			left: -1.5rem;
+    			right: -1.5rem;
+				.bt1 {
+					padding-right:5% ;
+				}
+			}
+			.info_wheather{
+				display: flex;
+				margin-top: 15%;
+				margin-left: 15%;
+				.wheather_column{
+
+					display: flex;
+					flex-direction: column;
+					color:hsla(0,0%,100%,.5) ;
+					padding-right: 60%;
+				}
+			}
+			.info_city{
+				color: hsla(0,0%,100%,.5);
+    			font-size: .9rem;
+				margin-top: 15%;
+				margin-left:15%;
+				display: flex;
+				width: 100%;
+			}
+		}
+		.info_rigth{
+			width: 50%;
+		}
+		.info_place{
+			color:white;
+			margin-top: 5%;
+			margin-left:15%;
+			font-size: 36px;
+			font-family:" gt-sectra";
+    		font-weight: 200;
+		}
+		.info_coordinate{
+			display: flex;
+			color: grey;
+			margin-top: 5%;
+			margin-left:15%;
+			width: 100%;
+			padding-left: 1%;
+			font-size: .8rem;
+		}
+	.info_rigth{
+		
+		margin-top: 0px;
+		img{
+			height: 600px;
+		}
+	}
+	}
 }
-.component_three_image_left{
-	width: 80%;
-}
+
 .image_nav{
 	background-color: #fff;
 	display: flex;

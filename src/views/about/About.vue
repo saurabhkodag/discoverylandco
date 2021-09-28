@@ -2,7 +2,12 @@
 <template>
 <navv/>
 <headerrr/>
-<!-- <mission/> -->
+<mission/>
+<sliderr/>
+<imgmount/>
+<discovery/>
+
+
 <!-- <footerr/> -->
 </template>
 
