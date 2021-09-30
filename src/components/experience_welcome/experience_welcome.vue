@@ -1,74 +1,19 @@
-
-.photo_down{
-    display: flex;
-    justify-content: center;
-    background-color: #ffffff;
-    width: 100%;
-    height: 700px;
-    padding: 2%;
-    img{
-        width: 90%;
-    }
-}
-
-.our_mission{
-	background-color: #ffffff;
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	height: 800px;
-	text-align: center;
-	align-items: center;
-	.our_mission_left{
-		width: 45%;
-	}
-	.our_mission_rigth{
-		width: 45%;
-
-	}
-	.our_mission_header{
-		margin-bottom: 2rem;
-		line-height: 1.1;
-		font-size: calc(21.33333px + 1.13333vw);
-	}
-	.our_mission_para1,.our_mission_para2 {
-		color: #777;
-		line-height: 2;
-		font-size: .9rem;
-	}
-	.our_mission_para1{
-	margin-bottom: 1.5rem;
-	}
-	.our_mission_left_space{
-		width: 5%;
-	}
-	.our_mission_rigth_space{
-		width: 5%;
-	}
-	.our_mission_rigth{
-		width: 100%;
-		height: 100%;
-	img{
-		height: 100%;
-    width: 80%;
-	}
-	}
-  @media screen and (max-width: 1000px) {
-    flex-direction: column;
-    height: 1400px;
-  }
-}  
- 
- .home_text , .home_text_p{
-    background-color: #ffffff !important;
-    display: flex !important;
-    width: 100%;
-    height: 500px;
-    text-align: center;
-    font-size: calc(21.33333px + 1.13333vw);
-    font-family: "gt-sectra";
-     padding: 5%;
-  }
+<template>
+    <div class="home">
+    
+    <section class="main">
+      <navbar />
+      <video class="main-bg" autoplay muted loop>
+        <source src="https://dxaurk9yhilm4.cloudfront.net/experiences_hero.mp4?mtime=20190609072805" type="video/mp4" />
+      </video>
+      <main class="discover-your-world">
+        <span class="discover">Unforgettable</span>
+        <span class="your-world">experiences</span>
+      </main>
+    </section>
+    </div>
+</template>
+<style scoped lang="scss">
 #app{
     background-color:#ffffff;
 }
@@ -77,10 +22,7 @@
     overflow: hidden;
     width: 100%;
     position: relative;
-    img{
-      width: 100%;
-      height: 600px;
-    }
+
     video.main-bg {
       min-width: 100%;
       min-height: 100vh;
@@ -121,7 +63,7 @@
       justify-content: center;
     }
   }
-  
+
   #welcome {
     background-color:#ffffff;
      background: url("../../assets/home/home3.jpg");
@@ -201,5 +143,5 @@
       }
     }
   }
-
 }
+</style>

@@ -4,10 +4,11 @@
 <headerrr/>
 <mission/>
 <sliderr/>
+<ballon/>
+<design/>
 <imgmount/>
 <discovery/>
-
-
+<explore/>
 <!-- <footerr/> -->
 </template>
 

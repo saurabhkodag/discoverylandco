@@ -3,6 +3,7 @@ import gallery from '../views/gallery/gallery.vue'
 import worldgall from '../views/ourWorld/worldgallerymain.vue'
 import home from '../views/home/Home.vue'
 import about from '../views/about/About.vue'
+import experience from '../views/experience/experience.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/Gallery',
@@ -23,6 +24,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/about',
     name: 'About',
     component: about
+  },
+  {
+    path: '/Experiences',
+    name: 'experinece',
+    component: experience
   },
   // {
   //   path: '/about',

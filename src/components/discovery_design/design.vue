@@ -1,86 +1,30 @@
+<template>
+    <section id="welcome">
+      <div class="top-left">
+        <h1 class="welcome-to-our-world">
+          <span class="welcome-to">
+          Discovery Builders
+          </span>
+        </h1>
+        <p class="welcome-text">
+          Every Discovery property is wonderfully in-tune with its natural surroundings - a harmonious blend of the architecturally impressive with the environmentally sensitive. And your every expectation will be met, with our meticulous eye for detail matching outstanding levels of craftsmanship and master building.
+        </p>
+      </div>
+      <div class="right">
+        <img :src="require('@/assets/About/builder1.jpg')" alt="Ocean View" />
+      </div>
+      <div class="bottom-left">
+        <img :src="require('@/assets/About/builder2.jpg')" alt="Leisure" />
+      </div>
+    </section>
+  
+</template>
 
-.photo_down{
-    display: flex;
-    justify-content: center;
-    background-color: #ffffff;
-    width: 100%;
-    height: 700px;
-    padding: 2%;
-    img{
-        width: 90%;
-    }
-}
-
-.our_mission{
-	background-color: #ffffff;
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	height: 800px;
-	text-align: center;
-	align-items: center;
-	.our_mission_left{
-		width: 45%;
-	}
-	.our_mission_rigth{
-		width: 45%;
-
-	}
-	.our_mission_header{
-		margin-bottom: 2rem;
-		line-height: 1.1;
-		font-size: calc(21.33333px + 1.13333vw);
-	}
-	.our_mission_para1,.our_mission_para2 {
-		color: #777;
-		line-height: 2;
-		font-size: .9rem;
-	}
-	.our_mission_para1{
-	margin-bottom: 1.5rem;
-	}
-	.our_mission_left_space{
-		width: 5%;
-	}
-	.our_mission_rigth_space{
-		width: 5%;
-	}
-	.our_mission_rigth{
-		width: 100%;
-		height: 100%;
-	img{
-		height: 100%;
-    width: 80%;
-	}
-	}
-  @media screen and (max-width: 1000px) {
-    flex-direction: column;
-    height: 1400px;
-  }
-}  
- 
- .home_text , .home_text_p{
-    background-color: #ffffff !important;
-    display: flex !important;
-    width: 100%;
-    height: 500px;
-    text-align: center;
-    font-size: calc(21.33333px + 1.13333vw);
-    font-family: "gt-sectra";
-     padding: 5%;
-  }
+<style scoped lang="scss">
 #app{
     background-color:#ffffff;
 }
-.home {
-  .main {
-    overflow: hidden;
-    width: 100%;
-    position: relative;
-    img{
-      width: 100%;
-      height: 600px;
-    }
+
     video.main-bg {
       min-width: 100%;
       min-height: 100vh;
@@ -120,11 +64,13 @@
       flex-direction: column;
       justify-content: center;
     }
-  }
   
+
   #welcome {
+      display: flex;
+      align-content: center;
     background-color:#ffffff;
-     background: url("../../assets/home/home3.jpg");
+    //  background: url("../../assets/home/home3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 4rem 8rem;
@@ -147,6 +93,7 @@
       display: flex;
       flex-direction: column;
       row-gap: 3rem;
+      padding-top: 30%;
       @media screen and (max-width: 1000px) {
         row-gap: 2rem;
         padding: 2rem;
@@ -179,6 +126,7 @@
     }
 
     .right {
+      top: -10%;
       grid-row: span 2;
       @media screen and (max-width: 1000px) {
         padding: 0 2rem;
@@ -202,4 +150,4 @@
     }
   }
 
-}
+</style>

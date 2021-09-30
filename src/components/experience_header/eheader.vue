@@ -1,65 +1,15 @@
+   
+<template>
+  <div class="home_text">
+    <div class="home_text_p">
+      
+      Memorable days. Exceptional nights. We believe it’s our mission to make every minute matter. So you can live your life to the fullest, with the people closest to you.
+    </div>
+  </div>
+</template>
 
-.photo_down{
-    display: flex;
-    justify-content: center;
-    background-color: #ffffff;
-    width: 100%;
-    height: 700px;
-    padding: 2%;
-    img{
-        width: 90%;
-    }
-}
-
-.our_mission{
-	background-color: #ffffff;
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	height: 800px;
-	text-align: center;
-	align-items: center;
-	.our_mission_left{
-		width: 45%;
-	}
-	.our_mission_rigth{
-		width: 45%;
-
-	}
-	.our_mission_header{
-		margin-bottom: 2rem;
-		line-height: 1.1;
-		font-size: calc(21.33333px + 1.13333vw);
-	}
-	.our_mission_para1,.our_mission_para2 {
-		color: #777;
-		line-height: 2;
-		font-size: .9rem;
-	}
-	.our_mission_para1{
-	margin-bottom: 1.5rem;
-	}
-	.our_mission_left_space{
-		width: 5%;
-	}
-	.our_mission_rigth_space{
-		width: 5%;
-	}
-	.our_mission_rigth{
-		width: 100%;
-		height: 100%;
-	img{
-		height: 100%;
-    width: 80%;
-	}
-	}
-  @media screen and (max-width: 1000px) {
-    flex-direction: column;
-    height: 1400px;
-  }
-}  
- 
- .home_text , .home_text_p{
+<style scoped lang="scss">
+  .home_text , .home_text_p{
     background-color: #ffffff !important;
     display: flex !important;
     width: 100%;
@@ -203,3 +153,4 @@
   }
 
 }
+</style>

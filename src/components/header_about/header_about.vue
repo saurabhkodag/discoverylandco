@@ -33,6 +33,16 @@
     font-family: "gt-sectra";
      padding: 5%;
   }
+  @media screen and (max-width: 900px) {
+    .home_text , .home_text_p{
+      height: 200px;
+    }
+  }
+   @media screen and (max-width: 600px) {
+    .home_text , .home_text_p{
+      height: 350px;
+    }
+  }
 #app{
     background-color:#ffffff;
 }
