@@ -9,7 +9,7 @@
 <imgmount/>
 <discovery/>
 <explore/>
-<!-- <footerr/> -->
+<footerr/>
 </template>
 
 <script type="module" src="./about.ts"></script>

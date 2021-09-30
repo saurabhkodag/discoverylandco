@@ -4,17 +4,19 @@
     <welcome/>
     <welcometext/>
     <exclusion/>
+    <golf/>
     <footerr/>
   
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import headerrr from '@/components/header/headerr.vue';
+import headerrr from '@/components/navbar/navbar.vue';
 import footerr from '@/components/footer/footer.vue';
 import welcome from '@/components/experience_welcome/experience_welcome.vue'
 import welcometext from '@/components/experience_header/eheader.vue'
 import exclusion from '@/components/experience_exclusion/exclusion.vue'
+import golf from '@/components/experience_golf/golf.vue'
 @Options({
   components: {
    
@@ -22,6 +24,7 @@ import exclusion from '@/components/experience_exclusion/exclusion.vue'
     welcome,
     welcometext,
     exclusion,
+    golf,
     footerr,
   },
 })

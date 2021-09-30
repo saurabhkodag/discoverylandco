@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Work+Sans:wght@100;200&display=swap');
+$page-width: 100%;
+$interBBSpace: 4.5rem;
+$icon-size: 1.6rem;
+@mixin HeaderL1Font {
+  font-family: 'Benne', serif;
+}
+@mixin HeaderL2Font {
+  font-family: 'Work Sans', sans-serif;
+}
+#HomeFooter{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100vh;
+    @media screen and (max-width: 834px) {
+      height: 50vh;
+    }
+    @media screen and (max-width: 429px) {
+      grid-template-columns: 1fr;
+      height: 95vh;
+    }
+    a{
+      text-decoration: none;
+      color: #FFF;
+    }
+    .home-footer-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        background-color: #000000;
+        background-blend-mode: normal;
+        .overlay{
+          height: 100%;
+          width: 100%;
+          background: rgba($color: #000000, $alpha: 0.35);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+    }
+    .home-footer-image1{
+        background-image: url('https://dxaurk9yhilm4.cloudfront.net/images/728/Expereinces_slider_190716_095517_e36797c82dbcb9dea0800f713424f022.jpg');
+    }
+    .home-footer-image2{
+        background-image: url('https://dxaurk9yhilm4.cloudfront.net/images/729/lifestyle_slider_190716_095537_fc98236fcd7afd38ca0fd181cf61bcb6.jpg');
+    }
+    .home-footer-image3{
+        background-image: url('https://dxaurk9yhilm4.cloudfront.net/images/730/wellness_slider_190716_095551_90f8ce634cc6ad7a15d605007f03ee5c.jpg');
+    }
+    h4{
+        font-size: 44px;
+        line-height: 1.4;
+        @include HeaderL2Font;
+        font-weight: 300;
+        margin: 0;
+        @media screen and (max-width: 834px) {
+          font-size: 32px;
+        }
+    }
+    button{
+      margin-top: 1.5rem;
+      height: 4rem;
+      width: 4rem;
+      border-radius: 50%;
+      border: 1px solid #ffffff;
+      overflow: hidden;
+      cursor: pointer;
+      background-color: transparent;
+      color: #ffffff;
+      font-size: 1.5rem;
+      @media screen and (max-width: 834px) {
+        height: 3rem;
+        width: 3rem;
+      }
+    }
+  }

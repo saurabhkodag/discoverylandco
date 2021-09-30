@@ -12,7 +12,7 @@
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 // import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
-import headerrr from '@/components/header/headerr.vue';
+import headerrr from '@/components/navbar/navbar.vue';
 // import headd from '@/components/headerr.vue';
 import footerr from '@/components/footer/footer.vue';
 import home3 from '@/components/home3pic/home3pic.vue' 

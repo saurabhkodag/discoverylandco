@@ -8,12 +8,25 @@
     <div class="component_text"> Our scroll </div>
 </div>  
 </div>
-<div class="button-pair">
+<!-- <div class="button-pair">
                     <button class="first-button">&#8592;</button>
                     <button>&#8594;</button>
-</div>
+</div> -->
 </div>
 <div class="slider">
+        <div class="slider-track"  v-for="l in list" :key="l.url">
+        <div class="slide">
+            <div class="image-holder">
+                <img :src="getImgUrl(l.url)" >
+            </div>
+            <div class="img-description">
+                <span class = "img-title" v-text="l.caption"></span>
+                <span class = "img-location" v-text="l.location"></span> 
+            </div>
+        </div>
+        </div>
+    </div>
+<!-- <div class="slider">
 	<div class="slide-track">
 		<div class="slide" v-for="l in list" :key="l.url">
 			<img :src="getImgUrl(l.url)"  alt="" />
@@ -23,7 +36,7 @@
 			</div>
 		</div>
 		</div>
-		</div>
+		</div> -->
 </template>
 <style scoped lang="scss">
 
