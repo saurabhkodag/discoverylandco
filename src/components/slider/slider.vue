@@ -1,18 +1,15 @@
 <template>
-<div class="component_three_text" style="background:white">
-<div class="component_left">
-</div>
-<div class="component_center">
-  <div class="component_header">
-    <div class="component_text"> Explore </div>
-    <div class="component_text"> Our scroll </div>
-</div>  
-</div>
-<!-- <div class="button-pair">
-                    <button class="first-button">&#8592;</button>
-                    <button>&#8594;</button>
-</div> -->
-</div>
+
+<div class="headerBlock">
+            <div class="headerText">
+              <h1 id="h1">Explore</h1>
+              <h1 id="h2">our worlds</h1>
+            </div>
+            <div class="button-pair">
+                <button class="first-button">&#8592;</button>
+                <button>&#8594;</button>
+            </div>
+          </div>
 <div class="slider">
         <div class="slider-track"  v-for="l in list" :key="l.url">
         <div class="slide">

@@ -1,14 +1,33 @@
 <template>
     <div class="main">
     <div class="main_left">
-        <img src="https://dxaurk9yhilm4.cloudfront.net/images/533/Golf3_4d32d1f061062da257f8ac1083a047ac.jpg">
+        <img src="getImg(imgs)">
     </div>
     <div class="main_rigth">
-        <h1>Golf</h1>
-        <p> We commission the world’s most renowned course architects to design spectacular golf experiences on challenging yet incredibly playable 18-hole courses. Our trademark comfort stations also set new standards in on-course amenities.</p> 
+        <!-- <h1>Golf</h1> -->
+        <h1 v-text="headd"></h1>
+        <p v-text="para"> </p> 
     </div>
     </div>
 </template>
+
+<script lang="ts">
+import { Options, Vue } from 'vue-class-component';
+
+@Options({
+  props: {
+    imgs:String,
+    headd: String,
+    para:String,
+  }
+})
+export default class HelloWorld extends Vue {
+getImg(pic: string): string {
+  return require("@/assets/home" + pic);
+}
+}
+</script>
+
 <style scoped lang="scss">
 
 @import './golf.scss';

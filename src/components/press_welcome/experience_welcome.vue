@@ -1,29 +1,28 @@
 <template>
-    <section id="welcome">
-      <div class="top-left">
-        <h1 class="welcome-to-our-world">
-          <span class="welcome-to">
-          Discovery Builders
-          </span>
-        </h1>
-        <p class="welcome-text">
-          Every Discovery property is wonderfully in-tune with its natural surroundings - a harmonious blend of the architecturally impressive with the environmentally sensitive. And your every expectation will be met, with our meticulous eye for detail matching outstanding levels of craftsmanship and master building.
-        </p>
+      <div class="home">
+    <!-- main section -->
+    <section class="main">
+      <navbar />
+      <div class="main-bg" >
+        <img src="@/assets/About/header.jpg"  >
       </div>
-      <div class="right">
-        <img src="https://dxaurk9yhilm4.cloudfront.net/images/157/What_we_do_design_1_2e8d9b92b1b20afb1d0f8d6550777aa2.jpg" alt="Ocean View" />
-      </div>
-      <div class="bottom-left">
-        <img src="https://dxaurk9yhilm4.cloudfront.net/images/158/What_we_do_design_2_2ab4534b0a2984e07d7caeca8808129f.jpg" alt="Leisure" />
-      </div>
+      <main class="discover-your-world">
+        <span class="discover">News</span>
+        <span class="your-world">and Press</span>
+      </main>
     </section>
-  
+  </div>
 </template>
-
 <style scoped lang="scss">
 #app{
     background-color:#ffffff;
 }
+.home {
+  .main {
+    padding-bottom: 10%;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
 
     video.main-bg {
       min-width: 100%;
@@ -64,13 +63,11 @@
       flex-direction: column;
       justify-content: center;
     }
-  
+  }
 
   #welcome {
-      display: flex;
-      align-content: center;
     background-color:#ffffff;
-    //  background: url("../../assets/home/home3.jpg");
+     background: url("../../assets/home/home3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 4rem 8rem;
@@ -93,7 +90,6 @@
       display: flex;
       flex-direction: column;
       row-gap: 3rem;
-      padding-top: 30%;
       @media screen and (max-width: 1000px) {
         row-gap: 2rem;
         padding: 2rem;
@@ -126,7 +122,6 @@
     }
 
     .right {
-      top: -10%;
       grid-row: span 2;
       @media screen and (max-width: 1000px) {
         padding: 0 2rem;
@@ -149,5 +144,5 @@
       }
     }
   }
-
+}
 </style>
