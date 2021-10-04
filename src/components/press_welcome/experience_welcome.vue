@@ -4,7 +4,7 @@
     <section class="main">
       <navbar />
       <div class="main-bg" >
-        <img src="@/assets/About/header.jpg"  >
+        <img src="https://dxaurk9yhilm4.cloudfront.net/images/889/DJI_0161-copy_2cbd80a0345be3b5a0b7649a1a2d057f.jpg"  >
       </div>
       <main class="discover-your-world">
         <span class="discover">News</span>
@@ -33,7 +33,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      height: 100%;
+      height: 800px;
       color: #fff;
       padding: 0 20rem;
       @media screen and (max-width: 500px) {
