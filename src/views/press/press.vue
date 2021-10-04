@@ -1,19 +1,7 @@
 <template>
 <headerrr/>
 <welcome/>
-          <div class="container-2" >
-        <div class="main-image" >
-          <img src="https://dxaurk9yhilm4.cloudfront.net/images/8790/DJI_0265_RET_2_210405_191033_8cfe90628771654de81065d52a5bfbcf.jpg" alt="">
-        </div>
-        <div class="background-gradient">
-        </div>
-        <div class="white-box" >
-          <h1>Discovery’s newest property in Kaua’i North Shore Preserve</h1><br>
-          <p>  Discovery Land Company is excited to announce our 25th residential club community on the majestic North Shore of Kaua’i. North Shore Preserve, a one-of-a-kind residential community, spans one thousand acres at the base of the mountains in the pastoral Hanalei valley. This newly re-imagined, low-density project is a secluded and peaceful island oasis with limited initial homesite and hale offerings.
-                    </p><br>
-          <button class="button"><span>Explore</span></button>
-        </div>
-      </div>
+  <news/>
 <footerr/>
 </template>
 
@@ -22,13 +10,13 @@
 import headerrr from '@/components/navbar/navbar.vue'
 import footerr from '@/components/footer/footer.vue'
 import welcome from '@/components/press_welcome/experience_welcome.vue'
-
+import news from '@/components/latest_news/news.vue'
 @Options({
   components: {
       
     headerrr,
     welcome,
-   
+    news,
     footerr,
   },
 })
