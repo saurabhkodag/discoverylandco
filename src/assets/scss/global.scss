@@ -1,308 +1,308 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+// #app {
+//   font-family: Avenir, Helvetica, Arial, sans-serif;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   text-align: center;
  
   
-}
-.rout {
-  position: relative;
-  color: inherit;
-  text-decoration: none !important;
-  line-height: 24px;
-  text-decoration: none;
-}
-.rout:before, .rout:after, a > span:before, a > span:after {
-  content: '';
-  position: absolute;
-  transition: transform .5s ease;
-}
-.nav  .rigth_nav  .rout {
-  color: #ffffff;
-  display: inline-flex;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  overflow: hidden;
-}
-.nav  .rigth_nav .rout:before {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background: #fffeff;
-  transform: translateX(-100%);
-}
-.nav  .rigth_nav  .rout:hover:before {
-  transform: translateX(0);
-}
-body{
-  margin: 0;
-}
-.anav {
-  color: white;
-  margin: 0;
-    display: flex;
-  padding: 30px;
-  height: 400px;
-  background-position: center;
-  position: absolute;
-  z-index: 1;
-  // a {
-  //   font-weight: bold;
-  //   color: #ffffff;
-  // }
-}
-// .nav {
-//   margin: 0;
-//     display: flex;
-//   padding: 30px;
-//   // height: 400px;
-//   // background-image: url('https://dxaurk9yhilm4.cloudfront.net/images/7383/jael-rodriguez-AkF5NT0sZy8-unsplash-1-1_210301_200939_35d31212c7a2d4dccdff99afa3f88af5.jpg');
-//   background-position: center;
-//   a {
-//     font-weight: bold;
-//     color: #ffffff;
-
-//     // &.router-link-exact-active {
-//     //   color: #42b983;
-//     // }
-//   }
-  
 // }
-.left_nav{
-  font-family: sans-serif;
-  display: flex;
-  width: 50%;
-  // align-items: center;
-  
-  // justify-content: center;
-  // color: #ffffff;
-  // font-size: 30px;
-}
-.left_nav_img{
-  padding-left: 50px;
-  width: 30%;
-  height: 50px;
-}
-.left_nav_text{
-  padding-top: 50px;
-  color: #ffffff;
-  font-size: 30px;
-}
-.rigth_nav{
-  height: 35px;
-  color: #ffffff;
-  display: flex;
-  align-items: right;
-  width: 50%;
-  justify-content: space-evenly;
-}
-.back_image{
-  display: flex; 
-  width: 100%;
-  height: 200px;
-  justify-content: stretch;
- object-fit: cover;
-  background-image: url('https://dxaurk9yhilm4.cloudfront.net/images/7383/jael-rodriguez-AkF5NT0sZy8-unsplash-1-1_210301_200939_35d31212c7a2d4dccdff99afa3f88af5.jpg');
-  background-position: center;
- }
- .image-main{
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
- }
- .imgs{
-   width: 100%;
-   height: 350px;
- }
- .img_caption{
-   padding: 5%;
-   color: #ffffff;
-   font-size: medium;
- }
- .world-main{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.world_imgs{
-  width: 90%;
-  height: 200px;
-  padding: 5px;
-}
-.world_img_caption{
-  padding: 5%;
-  color: #ffffff;
-  font-size: medium;
-}
-
- .main-footer{
-   display: flex;
-   height: 400px;
-   background-color: #161f1e;
-   padding-top: 20px;
- }
- .left-main{
-   display: flex;
-   width: 60%;
- }
- .left-left{
-  display: flex;
-  justify-content: center;
-  width: 40%;
- }
- .logo{
-   
-   width: 20%;
-   height: 50px;
- }
- .left-right{
-  display: flex;
-  flex-direction: column;
-  
-  color: #ffffff;
-  width: 60%;
- }
- .rigth-main{
-  display: flex;
-  width: 40%;
-  height: 400px;
-  color: #ffffff;
-  font-size: medium;
- }
- .rigth-left{
-  width: 0%; 
- }
-   .rigth-center,.rigth-right{
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  height: 400px;
- }
- a{
-  padding: 10px;
-  color:#ffffff;
- }
-// .video-container {
-//   display: flex;
-//   justify-content: center;
-//     height: 500px;
-//     width: 100%;
-//     position: relative;
+// .rout {
+//   position: relative;
+//   color: inherit;
+//   text-decoration: none !important;
+//   line-height: 24px;
+//   text-decoration: none;
 // }
-
-// .video-container video {
-//   width: 100%;
-//   height: 100%;
+// .rout:before, .rout:after, a > span:before, a > span:after {
+//   content: '';
 //   position: absolute;
-//   object-fit: cover;
-//   z-index: 0;
+//   transition: transform .5s ease;
 // }
-// .nav{
+// .nav  .rigth_nav  .rout {
+//   color: #ffffff;
+//   display: inline-flex;
+//   padding-top: 10px;
+//   padding-bottom: 5px;
+//   overflow: hidden;
+// }
+// .nav  .rigth_nav .rout:before {
+//   left: 0;
+//   bottom: 0;
+//   width: 100%;
+//   height: 2px;
+//   background: #fffeff;
+//   transform: translateX(-100%);
+// }
+// .nav  .rigth_nav  .rout:hover:before {
+//   transform: translateX(0);
+// }
+// body{
+//   margin: 0;
+// }
+// .anav {
 //   color: white;
 //   margin: 0;
 //     display: flex;
 //   padding: 30px;
 //   height: 400px;
-//   // background-image: url('https://dxaurk9yhilm4.cloudfront.net/images/7383/jael-rodriguez-AkF5NT0sZy8-unsplash-1-1_210301_200939_35d31212c7a2d4dccdff99afa3f88af5.jpg');
 //   background-position: center;
 //   position: absolute;
 //   z-index: 1;
-//   a {
-//     font-weight: bold;
-//     color: #ffffff;
+//   // a {
+//   //   font-weight: bold;
+//   //   color: #ffffff;
+//   // }
+// }
+// // .nav {
+// //   margin: 0;
+// //     display: flex;
+// //   padding: 30px;
+// //   // height: 400px;
+// //   // background-image: url('https://dxaurk9yhilm4.cloudfront.net/images/7383/jael-rodriguez-AkF5NT0sZy8-unsplash-1-1_210301_200939_35d31212c7a2d4dccdff99afa3f88af5.jpg');
+// //   background-position: center;
+// //   a {
+// //     font-weight: bold;
+// //     color: #ffffff;
+
+// //     // &.router-link-exact-active {
+// //     //   color: #42b983;
+// //     // }
+// //   }
+  
+// // }
+// .left_nav{
+//   font-family: sans-serif;
+//   display: flex;
+//   width: 50%;
+//   // align-items: center;
+  
+//   // justify-content: center;
+//   // color: #ffffff;
+//   // font-size: 30px;
+// }
+// .left_nav_img{
+//   padding-left: 50px;
+//   width: 30%;
+//   height: 50px;
+// }
+// .left_nav_text{
+//   padding-top: 50px;
+//   color: #ffffff;
+//   font-size: 30px;
+// }
+// .rigth_nav{
+//   height: 35px;
+//   color: #ffffff;
+//   display: flex;
+//   align-items: right;
+//   width: 50%;
+//   justify-content: space-evenly;
+// }
+// .back_image{
+//   display: flex; 
+//   width: 100%;
+//   height: 200px;
+//   justify-content: stretch;
+//  object-fit: cover;
+//   background-image: url('https://dxaurk9yhilm4.cloudfront.net/images/7383/jael-rodriguez-AkF5NT0sZy8-unsplash-1-1_210301_200939_35d31212c7a2d4dccdff99afa3f88af5.jpg');
+//   background-position: center;
+//  }
+//  .image-main{
+//    display: grid;
+//    grid-template-columns: 1fr 1fr 1fr;
+//  }
+//  .imgs{
+//    width: 100%;
+//    height: 350px;
+//  }
+//  .img_caption{
+//    padding: 5%;
+//    color: #ffffff;
+//    font-size: medium;
+//  }
+//  .world-main{
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr 1fr;
+// }
+// .world_imgs{
+//   width: 90%;
+//   height: 200px;
+//   padding: 5px;
+// }
+// .world_img_caption{
+//   padding: 5%;
+//   color: #ffffff;
+//   font-size: medium;
+// }
+
+//  .main-footer{
+//    display: flex;
+//    height: 400px;
+//    background-color: #161f1e;
+//    padding-top: 20px;
+//  }
+//  .left-main{
+//    display: flex;
+//    width: 60%;
+//  }
+//  .left-left{
+//   display: flex;
+//   justify-content: center;
+//   width: 40%;
+//  }
+//  .logo{
+   
+//    width: 20%;
+//    height: 50px;
+//  }
+//  .left-right{
+//   display: flex;
+//   flex-direction: column;
+  
+//   color: #ffffff;
+//   width: 60%;
+//  }
+//  .rigth-main{
+//   display: flex;
+//   width: 40%;
+//   height: 400px;
+//   color: #ffffff;
+//   font-size: medium;
+//  }
+//  .rigth-left{
+//   width: 0%; 
+//  }
+//    .rigth-center,.rigth-right{
+//   display: flex;
+//   flex-direction: column;
+//   width: 30%;
+//   height: 400px;
+//  }
+//  a{
+//   padding: 10px;
+//   color:#ffffff;
+//  }
+// // .video-container {
+// //   display: flex;
+// //   justify-content: center;
+// //     height: 500px;
+// //     width: 100%;
+// //     position: relative;
+// // }
+
+// // .video-container video {
+// //   width: 100%;
+// //   height: 100%;
+// //   position: absolute;
+// //   object-fit: cover;
+// //   z-index: 0;
+// // }
+// // .nav{
+// //   color: white;
+// //   margin: 0;
+// //     display: flex;
+// //   padding: 30px;
+// //   height: 400px;
+// //   // background-image: url('https://dxaurk9yhilm4.cloudfront.net/images/7383/jael-rodriguez-AkF5NT0sZy8-unsplash-1-1_210301_200939_35d31212c7a2d4dccdff99afa3f88af5.jpg');
+// //   background-position: center;
+// //   position: absolute;
+// //   z-index: 1;
+// //   a {
+// //     font-weight: bold;
+// //     color: #ffffff;
+// //   }
+// // }
+// .pic{
+//   display: flex;
+//   width: 100%;
+//   height: 700px;
+// }
+// .pic1class ,.pic2class,.pic3class {
+//   width: 100%;
+//   height: 700px;
+//   position: relative;
+
+//   background-color: #2e2929;
+// }
+// .pic1{
+//   display: flex;
+//   justify-content: center;
+//   width: 33%;
+//   justify-content: center;
+//   align-items: center;
+// }
+// .pic2{
+//   display: flex;
+//   width: 33%;
+//   justify-content: center;
+//   align-items: center;
+// }
+// .pic3{
+//   display: flex;
+//   width: 33%;
+//   justify-content: center;
+//   align-items: center;
+// }
+// .pic1text ,.pic2text,.pic3text {
+//   position: absolute;
+//   z-index: 1;
+//   color: #ffffff;
+//   font-family: "gotham";
+//    font-size: xx-large;
+  
+//   // font-weight: 100;
+
+  
+// }
+// @media screen and (max-width: 980px) {
+//   .world-main {
+//     grid-template-columns: 1fr 1fr;
 //   }
 // }
-.pic{
-  display: flex;
-  width: 100%;
-  height: 700px;
-}
-.pic1class ,.pic2class,.pic3class {
-  width: 100%;
-  height: 700px;
-  position: relative;
-
-  background-color: #2e2929;
-}
-.pic1{
-  display: flex;
-  justify-content: center;
-  width: 33%;
-  justify-content: center;
-  align-items: center;
-}
-.pic2{
-  display: flex;
-  width: 33%;
-  justify-content: center;
-  align-items: center;
-}
-.pic3{
-  display: flex;
-  width: 33%;
-  justify-content: center;
-  align-items: center;
-}
-.pic1text ,.pic2text,.pic3text {
-  position: absolute;
-  z-index: 1;
-  color: #ffffff;
-  font-family: "gotham";
-   font-size: xx-large;
-  
-  // font-weight: 100;
-
-  
-}
-@media screen and (max-width: 980px) {
-  .world-main {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media screen and (max-width: 720px) {
-  .world-main {
-    grid-template-columns: 1fr;
-  }
-  .main-footer{
-    flex-direction: column;
-    width:100%;
-  }
-  .left_nav_img{
+// @media screen and (max-width: 720px) {
+//   .world-main {
+//     grid-template-columns: 1fr;
+//   }
+//   .main-footer{
+//     flex-direction: column;
+//     width:100%;
+//   }
+//   .left_nav_img{
     
-    width: 100%;
-    height: 50px;
-  }
-}
-@media screen and (max-width: 500px) {
-.rigth-main {
-  display: flex;
-  width:100%;
-  flex-direction: column;
-}
-.left_nav {
-  display: flex;
-  width:50%;
-  flex-direction: column;
-  justify-content: left;
-}
-.rigth_nav {
-  display: flex;
-  width:50%;
-  flex-direction: column;
-  justify-content: left;
-}
-.nav{
-  flex-direction: column;
-  width:100%;
-}
-.left-main{
-  display: flex;
-  flex-direction: column;
-  width:100%;
-}
+//     width: 100%;
+//     height: 50px;
+//   }
+// }
+// @media screen and (max-width: 500px) {
+// .rigth-main {
+//   display: flex;
+//   width:100%;
+//   flex-direction: column;
+// }
+// .left_nav {
+//   display: flex;
+//   width:50%;
+//   flex-direction: column;
+//   justify-content: left;
+// }
+// .rigth_nav {
+//   display: flex;
+//   width:50%;
+//   flex-direction: column;
+//   justify-content: left;
+// }
+// .nav{
+//   flex-direction: column;
+//   width:100%;
+// }
+// .left-main{
+//   display: flex;
+//   flex-direction: column;
+//   width:100%;
+// }
 
-.main-footer{
-  height: 1000px;
-}
+// .main-footer{
+//   height: 1000px;
+// }
 
-}
+// }

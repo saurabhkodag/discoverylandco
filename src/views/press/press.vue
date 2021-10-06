@@ -2,6 +2,7 @@
 <headerrr/>
 <welcome/>
   <news/>
+<PressNews/>
 <footerr/>
 </template>
 
@@ -11,12 +12,14 @@ import headerrr from '@/components/navbar/navbar.vue'
 import footerr from '@/components/footer/footer.vue'
 import welcome from '@/components/press_welcome/experience_welcome.vue'
 import news from '@/components/latest_news/news.vue'
+import PressNews from '@/components/press_news/pressNews.vue'
 @Options({
   components: {
       
     headerrr,
     welcome,
     news,
+    PressNews,
     footerr,
   },
 })
@@ -24,7 +27,7 @@ export default class Home extends Vue {}
 </script>
 
 <style scoped lang="scss">
-   @import '@/assets/scss/global';
+  //  @import '@/assets/scss/global';
    @import '../experience/experience.scss';
      .nav {
        display: flex;

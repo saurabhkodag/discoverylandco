@@ -1,72 +1,242 @@
-.pagination{
-   display: flex;
-   
-}
-.main_news{
-    display: flex;
-}
-.left_news{
-    object-fit: cover;
-    padding-left: 11%;
-    width: 60%;
-    
-    
-}
-.images{
-    width: 150%;
-    height: 800px;
-}
-.right_news{
-    border: 1px solid grey;
-    margin-top: 5%;
-    background-color: white !important;
-    width: 30%;
-    height: 500px;
-    
-    width: 30%;
-    padding: 2%;
-    margin-bottom: 5%;
+$para-color: #777;
+$title-color: #000;
+$page-width: 100%;
 
-    h1{
-        font-size: calc(21.33333px + 1.13333vw);
+@mixin paratext{
+    color: $para-color;
+    // font-size: 2rem;
+}
+@mixin maintext{
+    @include RoyalFont;
+    color: $title-color;
+    // font-size: 3rem;
+}
+@mixin RoyalFont {
+    font-family: 'Benne', serif;
+}
+@mixin HeaderL2Font {
+    font-family: 'Work Sans', sans-serif;
+}
+
+@mixin button-animation-whitebg{
+    $button-color: #000;
+    .button{
+        position: relative;
+        margin: 1%;
+        padding: 1% 2%;
+        text-align: center;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        background: transparent;
+        color: $button-color;
+        border: 1.25px solid $button-color;
+        cursor: pointer;
+        transition: ease-out 0.5s;
     }
     
-
-}
-.bt-1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 8%;
-    width: 50%;
-    background-color: white !important;
-    font-size: 10px !important;
-    border: 0.1px solid grey;
-    color: grey;
-}
-p{
-    color: #777;
-    line-height: 2;
-    font-size: .9rem;
-}
-
-.bt{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    .svg{
-        width: 50px;
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 500;
     }
+      
+    .button span:after {
+        content: '\00BB';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+      
+    .button:hover span {
+        padding-right: 25px;
+    }
+      
+    .button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+}
+
+@mixin button-icons {
+    display: flex;
+    // $interBBSpace: 4.5rem;
+    // margin-bottom: $interBBSpace;
     button{
-        border:none !important;
-        height: 0px;
-        width: 0px;
+        width: 2rem;
+        // margin-right: 1rem;
+        border: none;
+        background-color: inherit;
+        outline: none;
+        @media screen and (max-width: 429px) {
+            width: 1.75rem;
+        }
     }
 }
-.txt{
-    text-align: center;
-    width: 5%;
+
+@mixin video-header{
+    // margin-bottom: 25vh;
+    position: absolute;
+    
+    z-index: 100;
+    width: $page-width;
+    @media screen and (max-width: 834px) {
+        display: none;
+    }
+    .video-title{
+        position: absolute;
+        color: #FFF;
+        top: 25rem;
+        left: 20%;
+        h1{
+            color: #ffffff;
+            font-size: 4.75rem;
+            line-height: 0.75;
+        }
+        #title1{
+            @include RoyalFont;
+        }
+        #title2{
+            @include HeaderL2Font;
+        }
+    }
+}
+@mixin RoyalFont {
+  font-family: 'Benne', serif;
+}
+@mixin HeaderL2Font {
+  font-family: 'Work Sans', sans-serif;
 }
 
+@mixin horizontal-align {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin vertical-align {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  justify-content: center;
+}
+
+$para-color: #777;
+$page-width: 100%;
+$title-color: #000;
+
+@mixin paratext{
+  color: $para-color;
+  // font-size: 2rem;
+}
+@mixin maintext{
+  @include RoyalFont;
+  color: $title-color;
+  // font-size: 3rem;
+}
+
+// .press-header{
+//   background-image: url('https://dxaurk9yhilm4.cloudfront.net/images/889/DJI_0161-copy_2cbd80a0345be3b5a0b7649a1a2d057f.jpg');
+//   background-repeat: no-repeat;
+//   height: 100vh;
+// }
+
+.wrapper-container{
+  background-color: #f3f3f3;
+  .press-content-1{
+      width: 80vw;
+      padding: 8.5rem 0;
+      margin: auto;
+      @media screen and (max-width: 834px) {
+          width: 100vw;
+          padding: 4rem 0;
+      }
+      @media screen and (max-width: 834px) {
+          width: 100vw;
+          padding: 4rem 0 2rem 0;
+      }
+      #container-header{
+          @include maintext;
+          padding-left: 2rem;
+      }
+      .press-slideshow{
+          position: relative;
+          padding: 4rem 0;
+          @media screen and (max-width: 834px) {
+              display: flex;
+              flex-direction: column;
+              // align-items: center;
+              margin: auto;
+              padding: 0;
+          }
+          img{
+              width: 69vw;
+              height: 120vh;
+              @media screen and (max-width: 834px) {
+                  width: 100vw;
+                  height: auto;
+              }
+          }
+          .whitebox{
+              position: absolute;
+              top: 18%;
+              right: 0;
+              width: 25vw;
+              
+              padding: 4rem;
+              line-height: 1.5;
+              @media screen and (max-width: 834px) {
+                  position: relative;
+                  width: 90vw;
+                  height: auto;
+                  margin: auto;
+                  top: -5rem;
+              }
+              @media screen and (max-width: 429px) {
+                  position: relative;
+                  width: 95vw;
+                  padding: 3rem 1.5rem;
+                  line-height: 1.35;
+                  height: auto;
+                  margin: auto;
+                  top: -3rem;
+              }
+              h1{
+                  @include maintext;
+                  @media screen and (max-width: 429px) {
+                      font-size: 1.4rem;
+                  }
+              }
+              p{
+                  @include paratext;
+                  font-size: 0.9rem;
+                  @media screen and (max-width: 429px) {
+                      font-size: 0.75rem;
+                  }
+              }
+              @include button-animation-whitebg
+          }
+      }
+  }
+  .page-details{
+      align-items: center;
+      justify-content: center;
+      @include button-icons;
+      gap: 1.5rem;
+      @media screen and (max-width: 834px) {
+          position: relative;
+          top: -3rem;
+      }
+      @media screen and (max-width: 429px) {
+          position: relative;
+          top: -2.2rem;
+      }
+      p{
+          margin: auto 0;
+      }
+  }
+}
