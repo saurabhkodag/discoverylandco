@@ -5,15 +5,18 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "start":"node server.js"
   },
   "dependencies": {
     "@popperjs/core": "^2.10.1",
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.6.5",
+    "express": "^4.18.1",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
+    "serve-static": "^1.15.0",
     "vue": "^3.2.16",
     "vue-burger-menu": "^2.0.5",
     "vue-class-component": "^8.0.0-0",
