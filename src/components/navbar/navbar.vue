@@ -2,7 +2,7 @@
   <div id="header">
     <div id="nav">
       <div id="nav-logo" :class="[isToggled ? 'is-toggled' : '']">
-        <router-link @click="isToggled=false" to="/"
+        <router-link @click="isToggled = false" to="/"
           ><img
             class="logo"
             src="@/assets/images/logo1.png"
@@ -17,22 +17,21 @@
         </button>
       </div>
       <div id="nav-links" :class="[isToggled ? 'is-toggled' : '']">
-        <router-link @click="isToggled=false" to="/about"
+        <router-link @click="isToggled = false" to="/about"
           ><p class="hover-underline-animation">About DLC</p></router-link
         >
-        <router-link @click="isToggled=false" to="/ourWorlds"
+        <router-link @click="isToggled = false" to="/ourWorlds"
           ><p class="hover-underline-animation">Our Worlds</p></router-link
         >
-        <router-link @click="isToggled=false" to="/Experiences"
+        <router-link @click="isToggled = false" to="/Experiences"
           ><p class="hover-underline-animation">Experiences</p></router-link
         >
-        <router-link @click="isToggled=false" to="/Gallery"
+        <router-link @click="isToggled = false" to="/Gallery"
           ><p class="hover-underline-animation">Gallery</p></router-link
         >
-        <router-link @click="isToggled=false" to="/press"
+        <router-link @click="isToggled = false" to="/press"
           ><p class="hover-underline-animation">Press</p></router-link
         >
-        <!-- <router-link to="/">&#x2630;</router-link> -->
       </div>
     </div>
   </div>

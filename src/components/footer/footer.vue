@@ -10,7 +10,10 @@
             <a href="tel:(480) 624-5200">
               <p class="hover-underline-animation">(480) 624-5200</p>
             </a>
-            <a href="mailto:mail@discoverylandco.com" class="hover-underline-animation">
+            <a
+              href="mailto:mail@discoverylandco.com"
+              class="hover-underline-animation"
+            >
               mail@discoverylandco.com
             </a>
           </address>
@@ -65,46 +68,5 @@
 <script type="module" src="./footer.ts"></script>
 
 <style scoped lang="scss">
-  @import "./footer";
+@import "./footer";
 </style>
-
-
-<!--<template>
- <div class="main-footer">
-     <div class="left-main">
-         
-    <div class="left-left" >
-        <img class='logo' src='@/assets/images/onlylogo.png'>
-        </div>
-    <div class=left-right>
-        
-        <a>GET IN TOUCH</a>
-        <a>(480) 20624-5200</a>
-        <a>mail@discoverylandco.com</a>
-    </div>
-    </div>
-
-    <div class="rigth-main">
-    <div class="rigth-left">
-        
-    </div>
-    <div class="rigth-center">
-        <a>About DLC</a>
-        <a>Our Worlds</a>
-        <a>Experiences</a>
-        <a>Gallery</a>
-        <a>Press</a>
-    </div>
-    <div class="rigth-right">
-        <a>Magazine</a>
-        <a>Careers</a>
-        <a>Foundation</a>
-        <a>Company</a>
-        <a>Contact</a>
-        <a>Privacy</a>
-    </div>
-    <div class="right-space">
-    </div>
-    </div>
-</div>
-</template> -->

@@ -1,13 +1,10 @@
 <template>
-    
-    <headerr/>
-    <gallery/>
-    <footerr/>
-  
+  <headerr />
+  <gallery />
+  <footerr />
 </template>
 
 <script type="module" src="./gallery.ts"></script>
 <style scoped lang="scss">
-
-@import './gallery.scss';
+@import "./gallery.scss";
 </style>

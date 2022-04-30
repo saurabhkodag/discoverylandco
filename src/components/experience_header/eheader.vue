@@ -2,32 +2,34 @@
 <template>
   <div class="home_text">
     <div class="home_text_p">
-      
-      Memorable days. Exceptional nights. We believe it’s our mission to make every minute matter. So you can live your life to the fullest, with the people closest to you.
+      Memorable days. Exceptional nights. We believe it’s our mission to make
+      every minute matter. So you can live your life to the fullest, with the
+      people closest to you.
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-  .home_text , .home_text_p{
-    background-color: #ffffff !important;
-    display: flex !important;
-    width: 100%;
-    height: 500px;
-    text-align: center;
-    font-size: calc(21.33333px + 1.13333vw);
-    font-family: "gt-sectra";
-     padding: 5%;
-  }
-#app{
-    background-color:#ffffff;
+.home_text,
+.home_text_p {
+  background-color: #ffffff !important;
+  display: flex !important;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  font-size: calc(21.33333px + 1.13333vw);
+  font-family: "gt-sectra";
+  padding: 5%;
+}
+#app {
+  background-color: #ffffff;
 }
 .home {
   .main {
     overflow: hidden;
     width: 100%;
     position: relative;
-    img{
+    img {
       width: 100%;
       height: 600px;
     }
@@ -71,10 +73,10 @@
       justify-content: center;
     }
   }
-  
+
   #welcome {
-    background-color:#ffffff;
-     background: url("../../assets/home/home3.jpg");
+    background-color: #ffffff;
+    background: url("../../assets/home/home3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 4rem 8rem;
@@ -151,6 +153,5 @@
       }
     }
   }
-
 }
 </style>

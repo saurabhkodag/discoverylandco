@@ -1,10 +1,11 @@
 <template>
-      <div class="home">
-    <!-- main section -->
+  <div class="home">
     <section class="main">
       <navbar />
-      <div class="main-bg" >
-        <img src="https://dxaurk9yhilm4.cloudfront.net/images/889/DJI_0161-copy_2cbd80a0345be3b5a0b7649a1a2d057f.jpg"  >
+      <div class="main-bg">
+        <img
+          src="https://dxaurk9yhilm4.cloudfront.net/images/889/DJI_0161-copy_2cbd80a0345be3b5a0b7649a1a2d057f.jpg"
+        />
       </div>
       <main class="discover-your-world">
         <span class="discover">News</span>
@@ -14,8 +15,8 @@
   </div>
 </template>
 <style scoped lang="scss">
-#app{
-    background-color:#ffffff;
+#app {
+  background-color: #ffffff;
 }
 .home {
   .main {
@@ -63,15 +64,15 @@
       flex-direction: column;
       justify-content: center;
     }
-    img{
+    img {
       width: 100%;
       height: 100vh;
     }
   }
 
   #welcome {
-    background-color:#ffffff;
-     background: url("../../assets/home/home3.jpg");
+    background-color: #ffffff;
+    background: url("../../assets/home/home3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 4rem 8rem;

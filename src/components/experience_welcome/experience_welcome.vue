@@ -1,21 +1,23 @@
 <template>
-    <div class="home">
-    
+  <div class="home">
     <section class="main">
       <navbar />
       <video class="main-bg" autoplay muted loop>
-        <source src="https://dxaurk9yhilm4.cloudfront.net/experiences_hero.mp4?mtime=20190609072805" type="video/mp4" />
+        <source
+          src="https://dxaurk9yhilm4.cloudfront.net/experiences_hero.mp4?mtime=20190609072805"
+          type="video/mp4"
+        />
       </video>
       <main class="discover-your-world">
         <span class="discover">Unforgettable</span>
         <span class="your-world">experiences</span>
       </main>
     </section>
-    </div>
+  </div>
 </template>
 <style scoped lang="scss">
-#app{
-    background-color:#ffffff;
+#app {
+  background-color: #ffffff;
 }
 .home {
   .main {
@@ -65,8 +67,8 @@
   }
 
   #welcome {
-    background-color:#ffffff;
-     background: url("../../assets/home/home3.jpg");
+    background-color: #ffffff;
+    background: url("../../assets/home/home3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 4rem 8rem;

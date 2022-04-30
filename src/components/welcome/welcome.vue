@@ -17,12 +17,8 @@
     <section id="welcome">
       <div class="top-left">
         <h1 class="welcome-to-our-world">
-          <span class="welcome-to">
-            Welcome to
-          </span>
-          <span class="our-world">
-            our world
-          </span>
+          <span class="welcome-to"> Welcome to </span>
+          <span class="our-world"> our world </span>
         </h1>
         <p class="welcome-text">
           Discover the unique atmosphere of our private residential club
@@ -44,8 +40,8 @@
 </template>
 
 <style scoped lang="scss">
-#app{
-    background-color:#ffffff;
+#app {
+  background-color: #ffffff;
 }
 .home {
   .main {
@@ -95,8 +91,8 @@
   }
 
   #welcome {
-    background-color:#ffffff;
-     background: url("../../assets/home/home3.jpg");
+    background-color: #ffffff;
+    background: url("../../assets/home/home3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 4rem 8rem;

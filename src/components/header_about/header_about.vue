@@ -4,8 +4,8 @@
     <!-- main section -->
     <section class="main">
       <navbar />
-      <div class="main-bg" >
-        <img src="@/assets/About/header.jpg"  >
+      <div class="main-bg">
+        <img src="@/assets/About/header.jpg" />
       </div>
       <main class="discover-your-world">
         <span class="discover">Create your</span>
@@ -15,43 +15,47 @@
   </div>
   <div class="home_text">
     <div class="home_text_p">
-      
-      Founded in 1994 by Mike Meldman, Discovery Land Company is a US-based real estate developer and operator of private residential club communities and resorts with a world-renowned portfolio of domestic and international properties.
-    
+      Founded in 1994 by Mike Meldman, Discovery Land Company is a US-based real
+      estate developer and operator of private residential club communities and
+      resorts with a world-renowned portfolio of domestic and international
+      properties.
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-  .home_text , .home_text_p{
-    background-color: #ffffff !important;
-    display: flex !important;
-    width: 100%;
-    height: 500px;
-    text-align: center;
-    font-size: calc(21.33333px + 1.13333vw);
-    font-family: "gt-sectra";
-     padding: 5%;
+.home_text,
+.home_text_p {
+  background-color: #ffffff !important;
+  display: flex !important;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  font-size: calc(21.33333px + 1.13333vw);
+  font-family: "gt-sectra";
+  padding: 5%;
+}
+@media screen and (max-width: 900px) {
+  .home_text,
+  .home_text_p {
+    height: 200px;
   }
-  @media screen and (max-width: 900px) {
-    .home_text , .home_text_p{
-      height: 200px;
-    }
+}
+@media screen and (max-width: 600px) {
+  .home_text,
+  .home_text_p {
+    height: 350px;
   }
-   @media screen and (max-width: 600px) {
-    .home_text , .home_text_p{
-      height: 350px;
-    }
-  }
-#app{
-    background-color:#ffffff;
+}
+#app {
+  background-color: #ffffff;
 }
 .home {
   .main {
     overflow: hidden;
     width: 100%;
     position: relative;
-    img{
+    img {
       width: 100%;
       height: 600px;
     }
@@ -95,10 +99,10 @@
       justify-content: center;
     }
   }
-  
+
   #welcome {
-    background-color:#ffffff;
-     background: url("../../assets/home/home3.jpg");
+    background-color: #ffffff;
+    background: url("../../assets/home/home3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 4rem 8rem;
@@ -175,6 +179,5 @@
       }
     }
   }
-
 }
 </style>

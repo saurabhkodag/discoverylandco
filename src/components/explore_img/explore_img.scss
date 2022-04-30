@@ -1,53 +1,52 @@
-.mountain_image{
+.mountain_image {
+  display: flex;
+  width: 100%;
+  width: 100%;
+  height: 500px;
+  .img_section {
+    width: 100%;
+    height: 500px;
+    img {
+      width: 100% !important;
+      height: 500px;
+    }
+  }
+  .explore_heading {
     display: flex;
-    width: 100%;
-    width: 100%;
-    height: 500px;
-    .img_section{
-    width: 100%;
-    height: 500px;
-    img{
-        width: 100% !important;
-        height: 500px;
+    position: absolute;
+    font-size: 52px;
+    color: white;
+    z-index: 1;
+    margin-top: 20%;
+    margin-left: 40%;
+  }
+  .explore_text {
+    display: flex;
+    position: absolute;
+    padding-top: 30px;
+    z-index: 1;
+    color: white;
+    margin-top: 25%;
+    margin-left: 45%;
+
+    font-family: "gotham";
+    font-weight: 200;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (max-width: 600px) {
+    .explore_heading {
+      margin-top: 50%;
+      margin-left: 35%;
+      font-size: 20px;
     }
+    .explore_text {
+      margin-top: 55%;
+      margin-left: 30%;
     }
-    .explore_heading{
-        display: flex;
-        position: absolute;
-        font-size: 52px;
-        color: white;
-        z-index: 1;
-        margin-top: 20%;
-        margin-left:40% 
-        
-    }
-    .explore_text{
-        display: flex;
-        position: absolute;
-        padding-top: 30px;
-        z-index: 1;
-        color: white;
-        margin-top: 25%;
-        margin-left:45%;
-        
-        font-family: 'gotham';
-        font-weight: 200;
-        padding-top: 1.5rem;
-        padding-bottom:1.5rem ;
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
-        justify-content: center;
-        align-items: center;
-    }
-    @media screen and (max-width: 600px) {
-        .explore_heading{
-            margin-top: 50%;
-            margin-left:35%;
-            font-size: 20px;
-        }
-        .explore_text{
-            margin-top: 55%;
-            margin-left:30%;
-        }
-      }
+  }
 }

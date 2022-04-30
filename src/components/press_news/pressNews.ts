@@ -168,114 +168,7 @@ import { Options, Vue } from 'vue-class-component';
                         para: `New York Times | June 9, 2021`
                     },
                 ],
-                // [
-                //     {
-                //         heading: ``,
-                //         para: ``
-                //     },
-                //     {
-                //         heading: ``,
-                //         para: ``
-                //     },
-                //     {
-                //         heading: ``,
-                //         para: ``
-                //     },
-                //     {
-                //         heading: ``,
-                //         para: ``
-                //     },
-                // ],
-                // [
-                //     {
-                //         heading: ``,
-                //         para: ``
-                //     },
-                //     {
-                //         heading: ``,
-                //         para: ``
-                //     },
-                //     {
-                //         heading: ``,
-                //         para: ``
-                //     },
-                //     {
-                //         heading: ``,
-                //         para: ``
-                //     },
-                // ],
-                // [
-                //     {
-                //         heading: ``,
-                //         para: ``
-                //     },
-                //     {
-                //         heading: ``,
-                //         para: ``
-                //     },
-                //     {
-                //         heading: ``,
-                //         para: ``
-                //     },
-                //     {
-                //         heading: ``,
-                //         para: ``
-                //     },
-                // ],
-                // [
-                //     {
-                //         heading: ``,
-                //         para: ``
-                //     },
-                //     {
-                //         heading: ``,
-                //         para: ``
-                //     },
-                //     {
-                //         heading: ``,
-                //         para: ``
-                //     },
-                //     {
-                //         heading: ``,
-                //         para: ``
-                //     },
-                // ],
-                // [
-                //     {
-                //         heading: ``,
-                //         para: ``
-                //     },
-                //     {
-                //         heading: ``,
-                //         para: ``
-                //     },
-                //     {
-                //         heading: ``,
-                //         para: ``
-                //     },
-                //     {
-                //         heading: ``,
-                //         para: ``
-                //     },
-                // ],
-                // [
-                //     {
-                //         heading: ``,
-                //         para: ``
-                //     },
-                //     {
-                //         heading: ``,
-                //         para: ``
-                //     },
-                //     {
-                //         heading: ``,
-                //         para: ``
-                //     },
-                //     {
-                //         heading: ``,
-                //         para: ``
-                //     },
-                // ],
+                
             ]
         }
     },
@@ -291,7 +184,6 @@ import { Options, Vue } from 'vue-class-component';
         },
         getImage(name: string){
             return require('@/assets/About/boat.jpg');
-            // return require('@/assets/Press/' +name);
         }
     }
 })
